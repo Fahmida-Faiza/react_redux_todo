@@ -4,5 +4,7 @@ import counterReducer from './features/counter/counterSlice'
   reducer: {
     counter: counterReducer,
   },
+
+   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(),
 })
 export default store;
